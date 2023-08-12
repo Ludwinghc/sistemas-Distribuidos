@@ -12,4 +12,5 @@ Create a virtual enviroment in python
 #4. ver el video https://youtu.be/-mN3VyJuCjM
 #5. dentro del comentario MAIN/////// en el archivo main que toca bajar
 #6.  se esta haciendo de manera de debugg donde se mira si todo sale bien se le indica el puerto
+#7. postman descargarlo y investigarlo
 #y se coloca en el entorno virtual
