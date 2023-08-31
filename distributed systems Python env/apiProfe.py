@@ -33,7 +33,7 @@ def estudianteget():
 @app.route('/estudiante', methods=['POST'])
 def estudiantepost():
     try:
-        #estudiante_codigo = request.form['codigo']
+        #estudiante_codigo = request.form['codigo'] 
         #estudiante_nombre = request.form['nota']
         ##Realizar metodo update de la nota
         return jsonify({"Choo Choo": "Actualiza nota del estudiante"})
