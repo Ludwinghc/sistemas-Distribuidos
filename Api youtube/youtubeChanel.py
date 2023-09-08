@@ -2,6 +2,7 @@
 import os
 from functools import wraps
 from flask import Flask, jsonify, request
+import requests
 from bs4 import BeautifulSoup
 from src import dataBaseApi as dataBase
 
@@ -11,7 +12,7 @@ def scrapingYoutubeDescription(nombre_canal):
         url_canal = f"https://www.youtube.com/{nombre_canal}"
 
         # Realizamos una solicitud HTTP para obtener el contenido de la página del canal
-        response = request.get(url_canal)
+        response = requests.get(url_canal)
         response.raise_for_status()
 
         # Analizamos el contenido HTML de la página
@@ -43,13 +44,19 @@ print(dataBase.conexionDatabase)
 
 @api.route('/consult', methods=['POST'])
 def consult():
-    nameChannel = request.form[''] 
-    descriptionChannel = scrapingYoutubeDescription(nameChannel)
-    newConex = dataBase.conexionDatabase()
-    cursor = newConex.cursor()
-    sentencia = 'INSERT INTO History (id, nameChannel, description) VALUES ('','+ str(nameChannel)+','+ str(descriptionChannel)+');'
-    cursor.execute(sentencia)
-
+    try:
+      nameChannel = request.form['channel_name'] 
+      print(nameChannel)
+      descriptionChannel = scrapingYoutubeDescription(nombre_canal=nameChannel)
+      print(descriptionChannel)
+      newConex = dataBase.conexionDatabase()
+      cursor = newConex.cursor()
+      sentencia = 'INSERT INTO History (nameChannel, description) VALUES ('+nameChannel+','+descriptionChannel+');'
+      cursor.execute(sentencia)
+    except Exception as e:
+        return jsonify({
+            "Message": "Error. "+ str(e) 
+        })
     
 
 

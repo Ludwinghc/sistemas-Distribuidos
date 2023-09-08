@@ -7,3 +7,4 @@ def conexionDatabase():
       password = "7qHv6dRJDS",
       database ="sql3645200",
       port ="3306")
+  return conex
