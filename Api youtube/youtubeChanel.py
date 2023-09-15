@@ -4,7 +4,7 @@
 # Inicio de importacion de librerias
 import os
 from functools import wraps
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request 
 import requests
 import re
 from bs4 import BeautifulSoup
