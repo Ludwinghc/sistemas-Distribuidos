@@ -2,9 +2,9 @@ import mysql.connector
 
 def conexionDatabase():
   conex = mysql.connector.connect(
-      host="sql3.freesqldatabase.com",
-      user = "sql3645200",
-      password = "7qHv6dRJDS",
-      database ="sql3645200",
+      host="ludwingengine.mysql.pythonanywhere-services.com",
+      user = "ludwingengine",
+      password = "150102Br",
+      database ="ludwingengine$apiYoutube",
       port ="3306")
   return conex

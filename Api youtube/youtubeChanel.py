@@ -50,8 +50,9 @@ def consult():
       descriptionChannel = scrapingYoutubeDescription(nombre_canal=nameChannel)
       print(descriptionChannel)
       newConex = dataBase.conexionDatabase()
+      print(newConex)
       cursor = newConex.cursor()
-      sentencia = 'INSERT INTO History (nameChannel, description) VALUES ('+nameChannel+','+descriptionChannel+');'
+      sentencia = "INSERT INTO History (nameChannel, description) VALUES ('"+nameChannel+"', '"+descriptionChannel+"');"
       cursor.execute(sentencia)
     except Exception as e:
         return jsonify({
