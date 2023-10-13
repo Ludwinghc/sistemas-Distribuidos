@@ -6,5 +6,5 @@ def inicio(request):
     return render(request,"pages/inicio.html",{})
 
 
-def portafolio(request):
-    return render(request,"pages/portafolio.html",{})
+def resumen(request):
+    return render(request,"pages/resume.html",{})
