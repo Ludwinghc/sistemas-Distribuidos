@@ -14,6 +14,8 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 # Inicio de Declaracion de librerias necesarias
 from pathlib import Path
 import os
+
+
 # Fin de Declaracion de librerias necesarias
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -135,3 +137,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, '')
 MEDIA_URL ='/media/'
+
+#  variables de entorno para el envio de correo de gmails
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'ludwing2002@gmail.com'
+EMAIL_HOST_PASSWORD = 'kazreynarnpfstsa'
+EMAIL_USE_TLS = True
