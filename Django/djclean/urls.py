@@ -24,5 +24,6 @@ urlpatterns = [
     path('inicio/', inicio),
     path('resumen/', resumen),
     path('', include('apps.portafolioLud.urls')),
-    path('', include('apps.contacts.urls'))
+    path('', include('apps.contacts.urls')),
+    path('', include('apps.locations.urls'))
 ]

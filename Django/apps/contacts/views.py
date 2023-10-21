@@ -37,6 +37,6 @@ def contactame(request):
     email.fail_silently = False
     email.send()
     # messages.success(request, 'Se envio el Correo')
-    return render(request, '../templates/pages/inicio.html')
+    return redirect(request, '../templates/pages/inicio.html')
 
   return render(request, 'pages/contacts.html')
