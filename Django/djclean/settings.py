@@ -146,3 +146,7 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'ludwing2002@gmail.com'
 EMAIL_HOST_PASSWORD = 'kazreynarnpfstsa'
 EMAIL_USE_TLS = True
+
+# variables de entorno
+LOGIN_REDIRECT_URL = 'inicio'
+LOGOUT_REDIRECT_URL = 'inicio'
