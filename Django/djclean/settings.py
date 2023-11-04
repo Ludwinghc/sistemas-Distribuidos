@@ -45,7 +45,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.portafolioLud',
     'apps.contacts',
-    'apps.locations'
+    'apps.locations',
+    'apps.directory',
+    'rest_framework',
+    'coreapi',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +153,9 @@ EMAIL_USE_TLS = True
 # variables de entorno
 LOGIN_REDIRECT_URL = 'inicio'
 LOGOUT_REDIRECT_URL = 'inicio'
+
+# Variables para documentacion de la api
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
+}
