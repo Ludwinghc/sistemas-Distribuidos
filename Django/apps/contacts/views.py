@@ -37,6 +37,7 @@ def contactame(request):
     email.fail_silently = False
     email.send()
     # messages.success(request, 'Se envio el Correo')
-    return redirect(request, '../templates/pages/inicio.html')
+    # ? duda para el profe si cambio el render por redirect me aparece un error
+    return render(request, '../templates/pages/inicio.html')
 
   return render(request, 'pages/contacts.html')
