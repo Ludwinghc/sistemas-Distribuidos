@@ -1,150 +1,281 @@
 {% extends "layouts/base.html" %}
+{% load static %}
 
 {% block title %}Pagina de portafolio {% endblock %}
 
 {% block content %}
-                <!-- Page Content-->
-                <div class="container px-5 my-5">
-                    <div class="text-center mb-5">
-                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
-                    </div>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Experience Section-->
-                            <section>
-                                <div class="d-flex align-items-center justify-content-between mb-4">
-                                    <h2 class="text-primary fw-bolder mb-0">Experience</h2>
-                                    <!-- Download resume button-->
-                                    <!-- Note: Set the link href target to a PDF file within your project-->
-                                    <a class="btn btn-primary px-4 py-3" href="#!">
-                                        <div class="d-inline-block bi bi-download me-2"></div>
-                                        Download Resume
-                                    </a>
+<!-- Page Content-->
+<div class="container px-5 my-5">
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Resume</span></h1>
+    </div>
+    <div class="row gx-5 justify-content-center">
+        <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <!-- Experience Section-->
+            <section>
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <h2 class="text-primary fw-bolder mb-0">Experience</h2>
+                    <!-- Download resume button-->
+                    <!-- Note: Set the link href target to a PDF file within your project-->
+                    <a class="btn btn-primary px-4 py-3"
+                        href="{% static 'assets/resume/HV Ludwing Hernandez Caro.pdf' %}" target="_blank">
+                        <div class="d-inline-block bi bi-download me-2"></div>
+                        Download Resume
+                    </a>
+                </div>
+                <!-- Experience Card 1-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-primary fw-bolder mb-2">2022 - 2023</div>
+                                    <div class="small fw-bolder">Junior Web Developer</div>
+                                    <div class="small text-muted">TST Solutions S.A.S</div>
+                                    <div class="small text-muted">Bogotá, Colombia</div>
                                 </div>
-                                <!-- Experience Card 1-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <div class="row align-items-center gx-5">
-                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                <div class="bg-light p-4 rounded-4">
-                                                    <div class="text-primary fw-bolder mb-2">2019 - Present</div>
-                                                    <div class="small fw-bolder">Web Developer</div>
-                                                    <div class="small text-muted">Stark Industries</div>
-                                                    <div class="small text-muted">Los Angeles, CA</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Experience Card 2-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <div class="row align-items-center gx-5">
-                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                <div class="bg-light p-4 rounded-4">
-                                                    <div class="text-primary fw-bolder mb-2">2017 - 2019</div>
-                                                    <div class="small fw-bolder">SEM Specialist</div>
-                                                    <div class="small text-muted">Wayne Enterprises</div>
-                                                    <div class="small text-muted">Gotham City, NY</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- Education Section-->
-                            <section>
-                                <h2 class="text-secondary fw-bolder mb-4">Education</h2>
-                                <!-- Education Card 1-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <div class="row align-items-center gx-5">
-                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                <div class="bg-light p-4 rounded-4">
-                                                    <div class="text-secondary fw-bolder mb-2">2015 - 2017</div>
-                                                    <div class="mb-2">
-                                                        <div class="small fw-bolder">Barnett College</div>
-                                                        <div class="small text-muted">Fairfield, NY</div>
-                                                    </div>
-                                                    <div class="fst-italic">
-                                                        <div class="small text-muted">Master's</div>
-                                                        <div class="small text-muted">Web Development</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Education Card 2-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <div class="row align-items-center gx-5">
-                                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
-                                                <div class="bg-light p-4 rounded-4">
-                                                    <div class="text-secondary fw-bolder mb-2">2011 - 2015</div>
-                                                    <div class="mb-2">
-                                                        <div class="small fw-bolder">ULA</div>
-                                                        <div class="small text-muted">Los Angeles, CA</div>
-                                                    </div>
-                                                    <div class="fst-italic">
-                                                        <div class="small text-muted">Undergraduate</div>
-                                                        <div class="small text-muted">Computer Science</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-8"><div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laudantium, voluptatem quis repellendus eaque sit animi illo ipsam amet officiis corporis sed aliquam non voluptate corrupti excepturi maxime porro fuga.</div></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- Divider-->
-                            <div class="pb-5"></div>
-                            <!-- Skills Section-->
-                            <section>
-                                <!-- Skillset Card-->
-                                <div class="card shadow border-0 rounded-4 mb-5">
-                                    <div class="card-body p-5">
-                                        <!-- Professional skills list-->
-                                        <div class="mb-5">
-                                            <div class="d-flex align-items-center mb-4">
-                                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-tools"></i></div>
-                                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional Skills</span></h3>
-                                            </div>
-                                            <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">SEO/SEM Marketing</div></div>
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Statistical Analysis</div></div>
-                                                <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Web Development</div></div>
-                                            </div>
-                                            <div class="row row-cols-1 row-cols-md-3">
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Network Security</div></div>
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Adobe Software Suite</div></div>
-                                                <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User Interface Design</div></div>
-                                            </div>
-                                        </div>
-                                        <!-- Languages list-->
-                                        <div class="mb-0">
-                                            <div class="d-flex align-items-center mb-4">
-                                                <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-code-slash"></i></div>
-                                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
-                                            </div>
-                                            <div class="row row-cols-1 row-cols-md-3 mb-4">
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div></div>
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div></div>
-                                                <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div></div>
-                                            </div>
-                                            <div class="row row-cols-1 row-cols-md-3">
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div></div>
-                                                <div class="col mb-4 mb-md-0"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Ruby</div></div>
-                                                <div class="col"><div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Node.js</div></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>To gather and analyze information in meetings with clients for the respective
+                                    requested developments.
+                                    Software development with PHP and Vue Js.
+                                    Provide support to previously developed software.</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- Experience Card 2-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-primary fw-bolder mb-2">2020 - 2022</div>
+                                    <div class="small fw-bolder">Freelancer</div>
+                                    <div class="small text-muted">Independent</div>
+                                    <div class="small text-muted">Bogotá, Colombia</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>Development of diverse software in web environment using PHP.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Education Section-->
+            <section>
+                <h2 class="text-secondary fw-bolder mb-4">Education</h2>
+                <!-- Education Card 1-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-secondary fw-bolder mb-2">2020 - Present</div>
+                                    <div class="mb-2">
+                                        <div class="small fw-bolder">Manuela Beltran University</div>
+                                        <div class="small text-muted">Bogotá, Colombia</div>
+                                    </div>
+                                    <div class="fst-italic">
+                                        <div class="small text-muted">Student</div>
+                                        <div class="small text-muted">Software Engineering</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>I am currently in my seventh semester of software engineering.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education Card 2-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-secondary fw-bolder mb-2">2018 - 2019</div>
+                                    <div class="mb-2">
+                                        <div class="small fw-bolder">SENA</div>
+                                        <div class="small text-muted">Bogotá, Colombia</div>
+                                    </div>
+                                    <div class="fst-italic">
+                                        <div class="small text-muted">Technician's</div>
+                                        <div class="small text-muted">Software Development</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>I graduated with honors as a software development technician.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Courses Section-->
+            <section>
+                <h2 class="text-secondary fw-bolder mb-4">Courses</h2>
+                <!-- Education Card 1-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-secondary fw-bolder mb-2">2022</div>
+                                    <div class="mb-2">
+                                        <div class="small fw-bolder">Cisco Networking Academy</div>
+                                        <div class="small text-muted">Bogotá, Colombia</div>
+                                    </div>
+                                    <div class="fst-italic">
+                                        <div class="small text-muted">Student's</div>
+                                        <div class="small text-muted">Introduction to Cyber Security</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>This course is taught by Cisco Networking Academy,
+                                    where you learn about cybersecurity concepts, types of attacks, protection against
+                                    attacks, protection against cyber attacks.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Education Card 2-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-secondary fw-bolder mb-2">2022</div>
+                                    <div class="mb-2">
+                                        <div class="small fw-bolder">ScrumStudy
+                                        </div>
+                                        <div class="small text-muted">Bogotá, Colombia</div>
+                                    </div>
+                                    <div class="fst-italic">
+                                        <div class="small text-muted">Studen's</div>
+                                        <div class="small text-muted">Scrum Fundamental Certified
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>The course consists of learning the principles and fundamental concepts of the Scrum
+                                    of the Scrum methodology and was given by ScrumStudy.
+                                    by ScrumStudy.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                                <!-- Education Card 2-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <div class="row align-items-center gx-5">
+                            <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                <div class="bg-light p-4 rounded-4">
+                                    <div class="text-secondary fw-bolder mb-2">2022</div>
+                                    <div class="mb-2">
+                                        <div class="small fw-bolder">
+                                            Cisco Networking Academy
+                                        </div>
+                                        <div class="small text-muted">Bogotá, Colombia</div>
+                                    </div>
+                                    <div class="fst-italic">
+                                        <div class="small text-muted">Studen's</div>
+                                        <div class="small text-muted">Python Essentials 1
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8">
+                                <div>the course program consisted of learning the basics of the Python 3 language, which is used to develop
+                                    Python 3 language, which is used to develop simple scripts.
+                                    scripts. This course was developed at Cisco Networking
+                                    Academy.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Divider-->
+            <div class="pb-5"></div>
+            <!-- Skills Section-->
+            <section>
+                <!-- Skillset Card-->
+                <div class="card shadow border-0 rounded-4 mb-5">
+                    <div class="card-body p-5">
+                        <!-- Professional skills list-->
+                        <div class="mb-5">
+                            <div class="d-flex align-items-center mb-4">
+                                <div
+                                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                    <i class="bi bi-tools"></i></div>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Professional
+                                        Skills</span></h3>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Scrum methodology</div>
+                                </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Requirements analysis</div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">UML Design
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Frontend Development
+                                    </div>
+                                </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Backend Development
+                                        Suite</div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">User 
+                                        Design</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Languages list-->
+                        <div class="mb-0">
+                            <div class="d-flex align-items-center mb-4">
+                                <div
+                                    class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3">
+                                    <i class="bi bi-code-slash"></i></div>
+                                <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Languages</span></h3>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3 mb-4">
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">HTML</div>
+                                </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">CSS</div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">JavaScript</div>
+                                </div>
+                            </div>
+                            <div class="row row-cols-1 row-cols-md-3">
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Python</div>
+                                </div>
+                                <div class="col mb-4 mb-md-0">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">PHP</div>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex align-items-center bg-light rounded-4 p-3 h-100">Vue.js</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
 {% endblock %}
