@@ -7,7 +7,13 @@
 <!-- Page Content-->
 <div class="container px-5 my-5">
     <div class="text-center mb-5">
-        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">My favorites songs on Spotify</span></h1>
+        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">
+          <i class="bi bi-file-music-fill"></i>
+          My favorites 
+          <br>
+          songs on Spotify
+          <i class="bi bi-file-music-fill"></i>
+        </span></h1>
     </div>
     <div class="row gx-6 justify-content-center">
         <div class="col-lg-11 col-xl-9 col-xxl-8">
@@ -17,11 +23,14 @@
                 {% for song in playlist %}
                 <div class="card shadow border-0 rounded-4 mb-5">
                   <div class="card-body p-5">
-                      <h4 class="text-gradient d-inline"> {{ song.nombre }}</h4>
+                      <h3 class="text-gradient d-inline"> {{ song.nombre }}</h3>
                         <div class="row align-items-center gx-5">
                                 <hr>
                               <div class="small fw-bolder">
-                              <a class="nav-link" href="{{song.link}}">Listening song</a>
+                              <h4><a class="nav-link" href="{{song.link}}">
+                                Listen song
+                                <i class="bi bi-music-player"></i>
+                              </a></h4>
                               </div>
                             </div>
                           </div>
