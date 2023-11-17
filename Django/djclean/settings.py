@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.portafolioLud',
     'apps.contacts',
-    'apps.locations'
+    'apps.locations',
+    'apps.Marvel'
 ]
 
 MIDDLEWARE = [

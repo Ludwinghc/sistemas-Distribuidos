@@ -27,5 +27,6 @@ urlpatterns = [
     path('exit/', exit, name='exit'),
     path('', include('apps.portafolioLud.urls')),
     path('', include('apps.contacts.urls')),
-    path('', include('apps.locations.urls'))
+    path('', include('apps.locations.urls')),
+    path('', include('apps.Marvel.urls'))
 ]
